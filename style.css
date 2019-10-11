@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0px;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -15,14 +22,30 @@ h1 {
   width: 400px;
   display: flex; /* establish flex container */
   flex-wrap: wrap; /* enable flex items to wrap */
-  justify-content: space-around;
+  justify-content: center;
   margin: auto;
+  font-family: "Shadows Into Light", cursive;
 }
 .cell {
+  display: flex;
   flex: 0 0 32%; /* don't grow, don't shrink, width */
   height: 100px;
   margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
   /* background-color: #999; */
+  font-size: 5rem;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.reset {
+  width: 100px;
+  height: 50px;
 }
 
 #top-left,
@@ -50,4 +73,13 @@ h1 {
 #bottom-left,
 #bottom-center {
   border-right: solid black 1px;
+}
+
+#message {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: red;
 }
